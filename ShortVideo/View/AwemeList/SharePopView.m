@@ -1,6 +1,6 @@
 //
 //  SharePopView.m
-//  Douyin
+//  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
@@ -134,7 +134,7 @@
         default:
             break;
     }
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/sshiqiao/douyin-ios-objectc"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/sshiqiao/ShortVideo-ios-objectc"]];
     [self dismiss];
 }
 - (void)onActionItemTap:(UITapGestureRecognizer *)sender {

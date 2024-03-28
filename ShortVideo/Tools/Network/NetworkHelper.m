@@ -1,6 +1,6 @@
 //
 //  NetworkHelper.m
-//  Douyin
+//  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
@@ -12,10 +12,10 @@
 
 NSString *const NetworkStatesChangeNotification = @"NetworkStatesChangeNotification";
 
-NSString *const NetworkDomain = @"com.start.douyin";
+NSString *const NetworkDomain = @"com.start.ShortVideo";
 
 //请求地址
-NSString *const BaseUrl = @"http://116.62.9.17:8080/douyin/";
+NSString *const BaseUrl = @"";
 
 //创建访客用户接口
 NSString *const CreateVisitorPath = @"visitor/create";

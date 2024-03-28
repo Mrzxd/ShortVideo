@@ -1,6 +1,6 @@
 //
 //  AwemeListController.m
-//  Douyin
+//  ShortVideo
 //
 //  Created by 张神 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
@@ -53,7 +53,7 @@ __weak AwemeListCell *currentCell = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.blackColor;
+    self.view.backgroundColor = UIColor.whiteColor;
     [self setUpView];
     [self loadData:1];
     
@@ -73,15 +73,7 @@ __weak AwemeListCell *currentCell = nil;
     currentCell.isPlayerReady = NO;
     [self loadWithRespones:
                   
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
+     
      @{
          @"exceptionMsg" : @"",
          @"data" : @{
@@ -1173,20 +1165,8 @@ __weak AwemeListCell *currentCell = nil;
          @"exceptionName" : @"",
          @"businessException" : @(false)
        }
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  pageSize:pageSize];
+     
+        pageSize:pageSize];
 }
 
 - (void)loadWithRespones:(id)respones pageSize:(NSInteger)pageSize {
@@ -1208,23 +1188,23 @@ __weak AwemeListCell *currentCell = nil;
     }
     
     if (modelArray.count == 0) {
-        [self.tableView.mj_footer endRefreshingWithNoMoreData];
+        [self.tableView endFooterNoMoreData];
         
         if (currentCell) {
             [currentCell.playerView cancelLoading:^{}];
         }
     } else {
-        [self.tableView.mj_footer endRefreshing];
+        [self.tableView reloadData];
+        [self.tableView endFooterRefresh];
     }
-    [self.tableView reloadData];
 }
 
 - (void)setUpView {
     self.view.layer.masksToBounds = YES;
     _isFirstLoad = YES;
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    _tableView.pagingEnabled = @(true);
-    _tableView.backgroundColor = UIColor.redColor;
+    _tableView.pagingEnabled = true;
+    _tableView.backgroundColor = UIColor.clearColor;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.prefetchDataSource = self;
@@ -1262,9 +1242,9 @@ __weak AwemeListCell *currentCell = nil;
 
 // 预加载数据 (预取)
 - (void)tableView:(UITableView *)tableView prefetchRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    for (NSIndexPath *indexPath in indexPaths) {
-        // 预加载 indexPaths 中表示的cell数据
-    }
+//    for (NSIndexPath *indexPath in indexPaths) {
+//        // 预加载 indexPaths 中表示的cell数据
+//    }
 }
 
 - (AwemeListCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
