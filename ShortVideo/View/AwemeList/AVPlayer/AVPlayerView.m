@@ -222,7 +222,7 @@
         
     } progressBlock:^(NSInteger receivedSize, NSInteger expectedSize, NSData *data) {
         // @autoreleasepool {
-        if ((wself.data.length + data.length) < 150 *1024 *1024) {
+        if ((wself.data.length + data.length) < 160 *1024 *1024) { // 限定数据最大为160M，防止部分手机内存超标，大家可以根据实际情况调整，目前的手机内存仍然不太理想，不建议修改超过200M以上。
             [wself.data appendData:data];
             [wself processPendingRequests];
         }           

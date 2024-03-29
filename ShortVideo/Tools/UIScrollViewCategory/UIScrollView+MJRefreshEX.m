@@ -54,10 +54,15 @@ typedef void(^LoadMoreBlock)(NSInteger pageIndex);
 
 - (void)addFooterWithWithHeaderWithAutomaticallyRefresh:(BOOL)automaticallyRefresh loadMoreBlock:(void(^)(NSInteger pageIndex))loadMoreBlock{
     
+    if (self.mj_footer.state == MJRefreshStateNoMoreData) {
+        
+        NSLog(@"refresh is ended");
+    }
+    
     self.loadMoreBlock = loadMoreBlock;
     
     if (automaticallyRefresh) {
-        MJRefreshAutoNormalFooter * footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        MJRefreshAutoNormalFooter * footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{            
              self.pageIndex += 1;
             if (self.loadMoreBlock) {
                 self.loadMoreBlock(self.pageIndex);
