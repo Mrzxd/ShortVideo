@@ -1,14 +1,14 @@
 //
-//  AwemeListResponse.m
+//  videoListResponse.m
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
 //
 
-#import "AwemeListResponse.h"
-#import "Aweme.h"
+#import "videoListResponse.h"
+#import "VideoModel.h"
 
-@implementation AwemeListResponse
+@implementation VideoListResponse
 
 @end

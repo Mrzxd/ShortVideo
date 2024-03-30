@@ -13,12 +13,12 @@
 		E31521172BB339E200114742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31521162BB339E200114742 /* Assets.xcassets */; };
 		E315211A2BB339E200114742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31521182BB339E200114742 /* LaunchScreen.storyboard */; };
 		E315211D2BB339E200114742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E315211C2BB339E200114742 /* main.m */; };
-		E315215D2BB33B1A00114742 /* AwemeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521412BB33B1900114742 /* AwemeListController.m */; };
+		E315215D2BB33B1A00114742 /* VideoPageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521412BB33B1900114742 /* VideoPageListController.m */; };
 		E315215E2BB33B1A00114742 /* AVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521462BB33B1A00114742 /* AVPlayerManager.m */; };
 		E315215F2BB33B1A00114742 /* ShortVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521472BB33B1A00114742 /* ShortVideoModel.m */; };
 		E31521602BB33B1A00114742 /* MusicAlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = E315214A2BB33B1A00114742 /* MusicAlbumView.m */; };
 		E31521612BB33B1A00114742 /* FavoriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = E315214C2BB33B1A00114742 /* FavoriteView.m */; };
-		E31521622BB33B1A00114742 /* AwemeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E315214D2BB33B1A00114742 /* AwemeListCell.m */; };
+		E31521622BB33B1A00114742 /* VideoPageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E315214D2BB33B1A00114742 /* VideoPageListCell.m */; };
 		E31521632BB33B1A00114742 /* FocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E315214E2BB33B1A00114742 /* FocusView.m */; };
 		E31521642BB33B1A00114742 /* SharePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521502BB33B1A00114742 /* SharePopView.m */; };
 		E31521652BB33B1A00114742 /* AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521522BB33B1A00114742 /* AVPlayerView.m */; };
@@ -45,7 +45,7 @@
 		E31521DF2BB33D9000114742 /* VisitorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E315218F2BB33D8F00114742 /* VisitorRequest.m */; };
 		E31521E02BB33D9000114742 /* PostGroupChatImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521912BB33D8F00114742 /* PostGroupChatImageRequest.m */; };
 		E31521E12BB33D9000114742 /* GroupChatListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521932BB33D8F00114742 /* GroupChatListRequest.m */; };
-		E31521E22BB33D9000114742 /* AwemeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521942BB33D8F00114742 /* AwemeListRequest.m */; };
+		E31521E22BB33D9000114742 /* VideoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521942BB33D8F00114742 /* VideoListRequest.m */; };
 		E31521E32BB33D9000114742 /* PostCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E315219B2BB33D8F00114742 /* PostCommentRequest.m */; };
 		E31521E42BB33D9000114742 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E315219E2BB33D8F00114742 /* BaseRequest.m */; };
 		E31521E52BB33D9000114742 /* CommentListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E315219F2BB33D8F00114742 /* CommentListRequest.m */; };
@@ -60,10 +60,10 @@
 		E31521EE2BB33D9000114742 /* CommentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521AC2BB33D8F00114742 /* CommentResponse.m */; };
 		E31521EF2BB33D9000114742 /* VisitorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521AD2BB33D8F00114742 /* VisitorResponse.m */; };
 		E31521F02BB33D9000114742 /* CommentListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B02BB33D8F00114742 /* CommentListResponse.m */; };
-		E31521F12BB33D9000114742 /* AwemeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B52BB33D8F00114742 /* AwemeResponse.m */; };
-		E31521F22BB33D9000114742 /* AwemeListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B72BB33D8F00114742 /* AwemeListResponse.m */; };
+		E31521F12BB33D9000114742 /* VideoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B52BB33D8F00114742 /* VideoResponse.m */; };
+		E31521F22BB33D9000114742 /* VideoListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B72BB33D8F00114742 /* VideoListResponse.m */; };
 		E31521F32BB33D9000114742 /* UserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521B82BB33D8F00114742 /* UserResponse.m */; };
-		E31521F42BB33D9000114742 /* Aweme.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521BD2BB33D9000114742 /* Aweme.m */; };
+		E31521F42BB33D9000114742 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521BD2BB33D9000114742 /* VideoModel.m */; };
 		E31521F52BB33D9000114742 /* PictureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521BE2BB33D9000114742 /* PictureInfo.m */; };
 		E31521F62BB33D9000114742 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521BF2BB33D9000114742 /* Video.m */; };
 		E31521F72BB33D9000114742 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E31521C02BB33D9000114742 /* User.m */; };
@@ -90,8 +90,8 @@
 		E31521192BB339E200114742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E315211B2BB339E200114742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E315211C2BB339E200114742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E31521412BB33B1900114742 /* AwemeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwemeListController.m; sourceTree = "<group>"; };
-		E31521422BB33B1900114742 /* AwemeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwemeListController.h; sourceTree = "<group>"; };
+		E31521412BB33B1900114742 /* VideoPageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPageListController.m; sourceTree = "<group>"; };
+		E31521422BB33B1900114742 /* VideoPageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPageListController.h; sourceTree = "<group>"; };
 		E31521442BB33B1A00114742 /* AVPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerManager.h; sourceTree = "<group>"; };
 		E31521452BB33B1A00114742 /* ShortVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoModel.h; sourceTree = "<group>"; };
 		E31521462BB33B1A00114742 /* AVPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerManager.m; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		E315214A2BB33B1A00114742 /* MusicAlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicAlbumView.m; sourceTree = "<group>"; };
 		E315214B2BB33B1A00114742 /* CircleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTextView.h; sourceTree = "<group>"; };
 		E315214C2BB33B1A00114742 /* FavoriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteView.m; sourceTree = "<group>"; };
-		E315214D2BB33B1A00114742 /* AwemeListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwemeListCell.m; sourceTree = "<group>"; };
+		E315214D2BB33B1A00114742 /* VideoPageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPageListCell.m; sourceTree = "<group>"; };
 		E315214E2BB33B1A00114742 /* FocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusView.m; sourceTree = "<group>"; };
 		E315214F2BB33B1A00114742 /* HoverTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoverTextView.h; sourceTree = "<group>"; };
 		E31521502BB33B1A00114742 /* SharePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharePopView.m; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		E31521562BB33B1A00114742 /* MusicAlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAlbumView.h; sourceTree = "<group>"; };
 		E31521572BB33B1A00114742 /* FocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusView.h; sourceTree = "<group>"; };
 		E31521582BB33B1A00114742 /* HoverTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoverTextView.m; sourceTree = "<group>"; };
-		E31521592BB33B1A00114742 /* AwemeListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwemeListCell.h; sourceTree = "<group>"; };
+		E31521592BB33B1A00114742 /* VideoPageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPageListCell.h; sourceTree = "<group>"; };
 		E315215A2BB33B1A00114742 /* FavoriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteView.h; sourceTree = "<group>"; };
 		E315215B2BB33B1A00114742 /* CommentsPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsPopView.h; sourceTree = "<group>"; };
 		E315215C2BB33B1A00114742 /* SharePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharePopView.h; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		E31521912BB33D8F00114742 /* PostGroupChatImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostGroupChatImageRequest.m; sourceTree = "<group>"; };
 		E31521922BB33D8F00114742 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
 		E31521932BB33D8F00114742 /* GroupChatListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatListRequest.m; sourceTree = "<group>"; };
-		E31521942BB33D8F00114742 /* AwemeListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwemeListRequest.m; sourceTree = "<group>"; };
+		E31521942BB33D8F00114742 /* VideoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoListRequest.m; sourceTree = "<group>"; };
 		E31521952BB33D8F00114742 /* DeleteGroupChatRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteGroupChatRequest.h; sourceTree = "<group>"; };
 		E31521962BB33D8F00114742 /* CommentListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentListRequest.h; sourceTree = "<group>"; };
 		E31521972BB33D8F00114742 /* DeleteCommentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCommentRequest.h; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		E315219E2BB33D8F00114742 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		E315219F2BB33D8F00114742 /* CommentListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentListRequest.m; sourceTree = "<group>"; };
 		E31521A02BB33D8F00114742 /* DeleteGroupChatRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteGroupChatRequest.m; sourceTree = "<group>"; };
-		E31521A12BB33D8F00114742 /* AwemeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwemeListRequest.h; sourceTree = "<group>"; };
+		E31521A12BB33D8F00114742 /* VideoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoListRequest.h; sourceTree = "<group>"; };
 		E31521A22BB33D8F00114742 /* PostGroupChatTextRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostGroupChatTextRequest.m; sourceTree = "<group>"; };
 		E31521A32BB33D8F00114742 /* UserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRequest.m; sourceTree = "<group>"; };
 		E31521A42BB33D8F00114742 /* DeleteCommentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCommentRequest.m; sourceTree = "<group>"; };
@@ -174,24 +174,24 @@
 		E31521A82BB33D8F00114742 /* GroupChatResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatResponse.m; sourceTree = "<group>"; };
 		E31521A92BB33D8F00114742 /* GroupChatListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatListResponse.m; sourceTree = "<group>"; };
 		E31521AA2BB33D8F00114742 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
-		E31521AB2BB33D8F00114742 /* AwemeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwemeResponse.h; sourceTree = "<group>"; };
+		E31521AB2BB33D8F00114742 /* VideoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoResponse.h; sourceTree = "<group>"; };
 		E31521AC2BB33D8F00114742 /* CommentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentResponse.m; sourceTree = "<group>"; };
 		E31521AD2BB33D8F00114742 /* VisitorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitorResponse.m; sourceTree = "<group>"; };
 		E31521AE2BB33D8F00114742 /* UserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserResponse.h; sourceTree = "<group>"; };
-		E31521AF2BB33D8F00114742 /* AwemeListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwemeListResponse.h; sourceTree = "<group>"; };
+		E31521AF2BB33D8F00114742 /* VideoListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoListResponse.h; sourceTree = "<group>"; };
 		E31521B02BB33D8F00114742 /* CommentListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentListResponse.m; sourceTree = "<group>"; };
 		E31521B12BB33D8F00114742 /* GroupChatListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatListResponse.h; sourceTree = "<group>"; };
 		E31521B22BB33D8F00114742 /* GroupChatResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatResponse.h; sourceTree = "<group>"; };
 		E31521B32BB33D8F00114742 /* CommentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentResponse.h; sourceTree = "<group>"; };
 		E31521B42BB33D8F00114742 /* VisitorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorResponse.h; sourceTree = "<group>"; };
-		E31521B52BB33D8F00114742 /* AwemeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwemeResponse.m; sourceTree = "<group>"; };
+		E31521B52BB33D8F00114742 /* VideoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoResponse.m; sourceTree = "<group>"; };
 		E31521B62BB33D8F00114742 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
-		E31521B72BB33D8F00114742 /* AwemeListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwemeListResponse.m; sourceTree = "<group>"; };
+		E31521B72BB33D8F00114742 /* VideoListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoListResponse.m; sourceTree = "<group>"; };
 		E31521B82BB33D8F00114742 /* UserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserResponse.m; sourceTree = "<group>"; };
 		E31521B92BB33D8F00114742 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
 		E31521BA2BB33D8F00114742 /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
 		E31521BC2BB33D9000114742 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
-		E31521BD2BB33D9000114742 /* Aweme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aweme.m; sourceTree = "<group>"; };
+		E31521BD2BB33D9000114742 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		E31521BE2BB33D9000114742 /* PictureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureInfo.m; sourceTree = "<group>"; };
 		E31521BF2BB33D9000114742 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		E31521C02BB33D9000114742 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		E31521C62BB33D9000114742 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		E31521C72BB33D9000114742 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		E31521C82BB33D9000114742 /* PictureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureInfo.h; sourceTree = "<group>"; };
-		E31521C92BB33D9000114742 /* Aweme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aweme.h; sourceTree = "<group>"; };
+		E31521C92BB33D9000114742 /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		E31521CA2BB33D9000114742 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		E31521CB2BB33D9000114742 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		E31521CC2BB33D9000114742 /* Visitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visitor.m; sourceTree = "<group>"; };
@@ -284,8 +284,8 @@
 		E31521402BB33B1900114742 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E31521422BB33B1900114742 /* AwemeListController.h */,
-				E31521412BB33B1900114742 /* AwemeListController.m */,
+				E31521422BB33B1900114742 /* VideoPageListController.h */,
+				E31521412BB33B1900114742 /* VideoPageListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,8 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				E31521512BB33B1A00114742 /* AVPlayer */,
-				E31521592BB33B1A00114742 /* AwemeListCell.h */,
-				E315214D2BB33B1A00114742 /* AwemeListCell.m */,
+				E31521592BB33B1A00114742 /* VideoPageListCell.h */,
+				E315214D2BB33B1A00114742 /* VideoPageListCell.m */,
 				E315214B2BB33B1A00114742 /* CircleTextView.h */,
 				E31521552BB33B1A00114742 /* CircleTextView.m */,
 				E315215B2BB33B1A00114742 /* CommentsPopView.h */,
@@ -416,28 +416,28 @@
 		E315218E2BB33D8F00114742 /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
-				E315218F2BB33D8F00114742 /* VisitorRequest.m */,
-				E31521902BB33D8F00114742 /* PostCommentRequest.h */,
-				E31521912BB33D8F00114742 /* PostGroupChatImageRequest.m */,
+				E31521A12BB33D8F00114742 /* VideoListRequest.h */,
+				E31521942BB33D8F00114742 /* VideoListRequest.m */,
 				E31521922BB33D8F00114742 /* BaseRequest.h */,
-				E31521932BB33D8F00114742 /* GroupChatListRequest.m */,
-				E31521942BB33D8F00114742 /* AwemeListRequest.m */,
-				E31521952BB33D8F00114742 /* DeleteGroupChatRequest.h */,
-				E31521962BB33D8F00114742 /* CommentListRequest.h */,
-				E31521972BB33D8F00114742 /* DeleteCommentRequest.h */,
-				E31521982BB33D8F00114742 /* UserRequest.h */,
-				E31521992BB33D8F00114742 /* PostGroupChatTextRequest.h */,
-				E315219A2BB33D8F00114742 /* PostGroupChatImageRequest.h */,
-				E315219B2BB33D8F00114742 /* PostCommentRequest.m */,
-				E315219C2BB33D8F00114742 /* VisitorRequest.h */,
-				E315219D2BB33D8F00114742 /* GroupChatListRequest.h */,
 				E315219E2BB33D8F00114742 /* BaseRequest.m */,
+				E31521962BB33D8F00114742 /* CommentListRequest.h */,
 				E315219F2BB33D8F00114742 /* CommentListRequest.m */,
-				E31521A02BB33D8F00114742 /* DeleteGroupChatRequest.m */,
-				E31521A12BB33D8F00114742 /* AwemeListRequest.h */,
-				E31521A22BB33D8F00114742 /* PostGroupChatTextRequest.m */,
-				E31521A32BB33D8F00114742 /* UserRequest.m */,
+				E31521972BB33D8F00114742 /* DeleteCommentRequest.h */,
 				E31521A42BB33D8F00114742 /* DeleteCommentRequest.m */,
+				E31521952BB33D8F00114742 /* DeleteGroupChatRequest.h */,
+				E31521A02BB33D8F00114742 /* DeleteGroupChatRequest.m */,
+				E315219D2BB33D8F00114742 /* GroupChatListRequest.h */,
+				E31521932BB33D8F00114742 /* GroupChatListRequest.m */,
+				E31521902BB33D8F00114742 /* PostCommentRequest.h */,
+				E315219B2BB33D8F00114742 /* PostCommentRequest.m */,
+				E315219A2BB33D8F00114742 /* PostGroupChatImageRequest.h */,
+				E31521912BB33D8F00114742 /* PostGroupChatImageRequest.m */,
+				E31521992BB33D8F00114742 /* PostGroupChatTextRequest.h */,
+				E31521A22BB33D8F00114742 /* PostGroupChatTextRequest.m */,
+				E31521982BB33D8F00114742 /* UserRequest.h */,
+				E31521A32BB33D8F00114742 /* UserRequest.m */,
+				E315219C2BB33D8F00114742 /* VisitorRequest.h */,
+				E315218F2BB33D8F00114742 /* VisitorRequest.m */,
 			);
 			path = HttpRequest;
 			sourceTree = "<group>";
@@ -445,24 +445,24 @@
 		E31521A62BB33D8F00114742 /* HttpResponse */ = {
 			isa = PBXGroup;
 			children = (
-				E31521A72BB33D8F00114742 /* CommentListResponse.h */,
-				E31521A82BB33D8F00114742 /* GroupChatResponse.m */,
-				E31521A92BB33D8F00114742 /* GroupChatListResponse.m */,
-				E31521AA2BB33D8F00114742 /* BaseResponse.m */,
-				E31521AB2BB33D8F00114742 /* AwemeResponse.h */,
-				E31521AC2BB33D8F00114742 /* CommentResponse.m */,
-				E31521AD2BB33D8F00114742 /* VisitorResponse.m */,
-				E31521AE2BB33D8F00114742 /* UserResponse.h */,
-				E31521AF2BB33D8F00114742 /* AwemeListResponse.h */,
-				E31521B02BB33D8F00114742 /* CommentListResponse.m */,
-				E31521B12BB33D8F00114742 /* GroupChatListResponse.h */,
-				E31521B22BB33D8F00114742 /* GroupChatResponse.h */,
-				E31521B32BB33D8F00114742 /* CommentResponse.h */,
-				E31521B42BB33D8F00114742 /* VisitorResponse.h */,
-				E31521B52BB33D8F00114742 /* AwemeResponse.m */,
+				E31521AF2BB33D8F00114742 /* VideoListResponse.h */,
+				E31521B72BB33D8F00114742 /* VideoListResponse.m */,
+				E31521AB2BB33D8F00114742 /* VideoResponse.h */,
+				E31521B52BB33D8F00114742 /* VideoResponse.m */,
 				E31521B62BB33D8F00114742 /* BaseResponse.h */,
-				E31521B72BB33D8F00114742 /* AwemeListResponse.m */,
+				E31521AA2BB33D8F00114742 /* BaseResponse.m */,
+				E31521A72BB33D8F00114742 /* CommentListResponse.h */,
+				E31521B02BB33D8F00114742 /* CommentListResponse.m */,
+				E31521B32BB33D8F00114742 /* CommentResponse.h */,
+				E31521AC2BB33D8F00114742 /* CommentResponse.m */,
+				E31521B12BB33D8F00114742 /* GroupChatListResponse.h */,
+				E31521A92BB33D8F00114742 /* GroupChatListResponse.m */,
+				E31521B22BB33D8F00114742 /* GroupChatResponse.h */,
+				E31521A82BB33D8F00114742 /* GroupChatResponse.m */,
+				E31521AE2BB33D8F00114742 /* UserResponse.h */,
 				E31521B82BB33D8F00114742 /* UserResponse.m */,
+				E31521B42BB33D8F00114742 /* VisitorResponse.h */,
+				E31521AD2BB33D8F00114742 /* VisitorResponse.m */,
 			);
 			path = HttpResponse;
 			sourceTree = "<group>";
@@ -470,8 +470,8 @@
 		E31521BB2BB33D9000114742 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				E31521C92BB33D9000114742 /* Aweme.h */,
-				E31521BD2BB33D9000114742 /* Aweme.m */,
+				E31521C92BB33D9000114742 /* VideoModel.h */,
+				E31521BD2BB33D9000114742 /* VideoModel.m */,
 				E31521CB2BB33D9000114742 /* BaseModel.h */,
 				E31521C12BB33D9000114742 /* BaseModel.m */,
 				E31521C22BB33D9000114742 /* Comment.h */,
@@ -615,7 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31521F22BB33D9000114742 /* AwemeListResponse.m in Sources */,
+				E31521F22BB33D9000114742 /* VideoListResponse.m in Sources */,
 				E31521662BB33B1A00114742 /* CommentsPopView.m in Sources */,
 				E31521602BB33B1A00114742 /* MusicAlbumView.m in Sources */,
 				E31521E82BB33D9000114742 /* UserRequest.m in Sources */,
@@ -641,15 +641,15 @@
 				E31521F82BB33D9000114742 /* BaseModel.m in Sources */,
 				E31521F32BB33D9000114742 /* UserResponse.m in Sources */,
 				E31521D42BB33D9000114742 /* NSAttributedString+Extension.m in Sources */,
-				E31521F12BB33D9000114742 /* AwemeResponse.m in Sources */,
+				E31521F12BB33D9000114742 /* VideoResponse.m in Sources */,
 				E315215F2BB33B1A00114742 /* ShortVideoModel.m in Sources */,
 				E31521F92BB33D9000114742 /* GroupChat.m in Sources */,
-				E31521622BB33B1A00114742 /* AwemeListCell.m in Sources */,
+				E31521622BB33B1A00114742 /* VideoPageListCell.m in Sources */,
 				E31521D32BB33D9000114742 /* PhotoView.m in Sources */,
 				E31521CE2BB33D9000114742 /* MenuPopView.m in Sources */,
 				E315237D2BB3483A00114742 /* UIScrollView+MJRefreshEX.m in Sources */,
-				E315215D2BB33B1A00114742 /* AwemeListController.m in Sources */,
-				E31521E22BB33D9000114742 /* AwemeListRequest.m in Sources */,
+				E315215D2BB33B1A00114742 /* VideoPageListController.m in Sources */,
+				E31521E22BB33D9000114742 /* VideoListRequest.m in Sources */,
 				E31521DE2BB33D9000114742 /* NetworkHelper.m in Sources */,
 				E31521D92BB33D9000114742 /* NSDate+Extension.m in Sources */,
 				E31521F52BB33D9000114742 /* PictureInfo.m in Sources */,
@@ -666,7 +666,7 @@
 				E315210F2BB339E100114742 /* SceneDelegate.m in Sources */,
 				E31521EB2BB33D9000114742 /* GroupChatResponse.m in Sources */,
 				E31521E42BB33D9000114742 /* BaseRequest.m in Sources */,
-				E31521F42BB33D9000114742 /* Aweme.m in Sources */,
+				E31521F42BB33D9000114742 /* VideoModel.m in Sources */,
 				E31521E92BB33D9000114742 /* DeleteCommentRequest.m in Sources */,
 				E31521FA2BB33D9000114742 /* Music.m in Sources */,
 				E31521D22BB33D9000114742 /* RefreshControl.m in Sources */,

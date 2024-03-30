@@ -1,14 +1,14 @@
 //
-//  Aweme.m
+//  video.m
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
 //
 
-#import "Aweme.h"
+#import "VideoModel.h"
 
-@implementation Aweme
+@implementation VideoModel
 @end
 
 @implementation Video_text
@@ -32,7 +32,7 @@
 @implementation Status
 @end
 
-@implementation Aweme_share_info
+@implementation Video_share_info
 @end
 
 @implementation Label_top

@@ -10,7 +10,7 @@
 
 @interface FocusView : UIImageView
 
-@property (nonatomic, weak) ShortVideoModel  *aweme;
+@property (nonatomic, weak) ShortVideoModel  *video;
 
 - (void)resetView;
 

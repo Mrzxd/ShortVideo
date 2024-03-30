@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UILabel           *label;
 @property (nonatomic, strong) UIImageView       *close;
 
-- (instancetype)initWithAwemeId:(NSString *)awemeId;
+- (instancetype)initWithvideoId:(NSString *)videoId;
 - (void)show;
 - (void)dismiss;
 

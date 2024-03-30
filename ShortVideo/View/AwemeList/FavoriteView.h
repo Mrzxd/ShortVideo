@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) UIImageView      *favoriteBefore;
 @property (nonatomic, strong) UIImageView      *favoriteAfter;
-@property (nonatomic, weak) ShortVideoModel  *aweme;
+@property (nonatomic, weak) ShortVideoModel  *video;
 @property (nonatomic, weak) UILabel *favoriteNum;
 
 - (void)resetView;

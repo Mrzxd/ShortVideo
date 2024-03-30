@@ -1,5 +1,5 @@
 //
-//  Aweme.h
+//  video.h
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
@@ -12,7 +12,7 @@
 #import "Music.h"
 
 
-@protocol Aweme;
+@protocol VideoProtocol;
 
 @class Video_text;
 @class Risk_infos;
@@ -21,11 +21,11 @@
 @class Video_labels;
 @class Descendants;
 @class Status;
-@class Aweme_share_info;
+@class Video_share_info;
 @class Label_top;
 @class Text_extra;
 
-@interface Aweme :BaseModel
+@interface VideoModel :BaseModel
 @property (nonatomic , strong) User              * author;
 @property (nonatomic , strong) Music              * music;
 @property (nonatomic , assign) BOOL              cmt_swt;
@@ -48,13 +48,13 @@
 @property (nonatomic , assign) BOOL              is_relieve;
 @property (nonatomic , strong) Status              * status;
 @property (nonatomic , assign) NSInteger              vr_type;
-@property (nonatomic , assign) NSInteger              aweme_type;
-@property (nonatomic , copy) NSString              * aweme_id;
+@property (nonatomic , assign) NSInteger              video_type;
+@property (nonatomic , copy) NSString              * video_id;
 @property (nonatomic , strong) Video              * video;
 @property (nonatomic , assign) BOOL              is_pgcshow;
 @property (nonatomic , copy) NSString              * desc;
 @property (nonatomic , assign) NSInteger              is_hash_tag;
-@property (nonatomic , strong) Aweme_share_info              * share_info;
+@property (nonatomic , strong) Video_share_info              * share_info;
 @property (nonatomic , copy) NSString              * share_url;
 @property (nonatomic , assign) NSInteger              scenario;
 @property (nonatomic , strong) Label_top              * label_top;
@@ -88,7 +88,7 @@
 
 @interface Statistics :BaseModel
 @property (nonatomic , assign) NSInteger              digg_count;
-@property (nonatomic , copy) NSString              * aweme_id;
+@property (nonatomic , copy) NSString              * video_id;
 @property (nonatomic , assign) NSInteger              share_count;
 @property (nonatomic , assign) NSInteger              play_count;
 @property (nonatomic , assign) NSInteger              comment_count;
@@ -113,7 +113,7 @@
 @property (nonatomic , assign) BOOL              allow_comment;
 @end
 
-@interface Aweme_share_info :BaseModel
+@interface Video_share_info :BaseModel
 @property (nonatomic , copy) NSString              * share_weibo_desc;
 @property (nonatomic , copy) NSString              * share_title;
 @property (nonatomic , copy) NSString              * share_url;

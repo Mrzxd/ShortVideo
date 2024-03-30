@@ -10,10 +10,10 @@
 
 @implementation Comment
 
--(instancetype)init:(NSString *)awemeId text:(NSString *)text taskId:(NSInteger)taskId {
+-(instancetype)init:(NSString *)videoId text:(NSString *)text taskId:(NSInteger)taskId {
     self = [super init];
     if(self) {
-        _aweme_id = awemeId;
+        _video_id = videoId;
         _text = text;
         _isTemp = YES;
         _taskId = taskId;

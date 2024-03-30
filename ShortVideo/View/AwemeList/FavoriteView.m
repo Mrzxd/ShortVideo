@@ -40,16 +40,16 @@ static const NSInteger kFavoriteViewLikeAfterTag   = 0x02;
     return self;
 }
 
-- (void)setAweme:(ShortVideoModel *)aweme {
-    _aweme = aweme;
-    [self startLikeAnim:aweme.likeStatus];
+- (void)setvideo:(ShortVideoModel *)video {
+    _video = video;
+    [self startLikeAnim:video.likeStatus];
     
 }
 
 - (void)handleGesture:(UITapGestureRecognizer *)sender {
    
     
-            self.aweme.likeStatus = YES;
+            self.video.likeStatus = YES;
             [self.favoriteNum setText:@"1"];
             self.favoriteNum.hidden = 1 == 0;
             [self startLikeAnim:YES];

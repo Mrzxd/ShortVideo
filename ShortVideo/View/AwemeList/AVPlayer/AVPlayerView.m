@@ -19,7 +19,6 @@
 @interface AVPlayerView () <NSURLSessionTaskDelegate, NSURLSessionDataDelegate, AVAssetResourceLoaderDelegate>
 
 @property (nonatomic, strong) NSURL                *sourceURL;              //视频路径
-@property (nonatomic, strong) AVPlayerLayer        *playerLayer;            //视频播放器图形化载体
 @property (nonatomic, strong) id                   timeObserver;            //视频播放器周期性调用的观察者
 
 @property (nonatomic, strong) NSMutableData        *data;                   //视频缓冲数据
@@ -69,7 +68,7 @@
 //设置播放路径
 - (void)setPlayerWithUrl:(NSString *)url currentTime:(CGFloat)currentTime {
     _isManualClick = NO;
-    if (self.aweme.row == 2) {
+    if (self.video.row == 2) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self setPlayerUrl:url currentTime:currentTime];
         });
@@ -117,7 +116,11 @@
     [wself.playerItem addObserver:wself forKeyPath:@"status" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:nil];
     //切换当前AVPlayer播放器的视频源
     wself.player = [[ZXAVPlayer alloc] initWithPlayerItem:wself.playerItem];
-    wself.player.defaultRate = 1.0;
+    if (@available(iOS 16.0, *)) {
+        wself.player.defaultRate = 1.0;
+    } else {
+        // Fallback on earlier versions
+    }
     //指定要开始播放的时间
     // CMTime targetTime = CMTimeMakeWithSeconds(currentTime, 1 *1000);
     // 使用seekToTime:方法将播放器定位到指定时间

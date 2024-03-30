@@ -73,7 +73,7 @@
 - (void)animationDidStart:(CAAnimation *)anim {
     
     self.hidden = YES;
-    self.aweme.followStatus = YES;
+    self.video.followStatus = YES;
                 
     self.userInteractionEnabled = NO;
     self.contentMode = UIViewContentModeScaleAspectFill;
@@ -91,16 +91,16 @@
     [self resetView];
 }
 
-- (void)setAweme:(ShortVideoModel *)aweme {
-    _aweme = aweme;
-    self.hidden = aweme.followStatus;
+- (void)setvideo:(ShortVideoModel *)video {
+    _video = video;
+    self.hidden = video.followStatus;
 }
 
 - (void)resetView {
     self.layer.backgroundColor = ColorThemeRed.CGColor;
     self.image = [UIImage imageNamed:@"添加关注"];
     [self.layer removeAllAnimations];
-    [self setHidden:self.aweme.followStatus];
+    [self setHidden:self.video.followStatus];
 }
 
 @end

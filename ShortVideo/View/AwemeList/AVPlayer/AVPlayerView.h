@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WebCacheHelpler.h"
-#import "AwemeListCell.h"
+#import "VideoPageListCell.h"
 #import <AVFoundation/AVFoundation.h>
 
 //自定义Delegate，用于进度、播放状态更新回调
@@ -36,11 +36,12 @@
 
 @property (nonatomic, assign) BOOL isPlayCompleted;
 
+@property (nonatomic, strong) AVPlayerLayer        *playerLayer;            //视频播放器图形化载体
 @property (nonatomic, strong) ZXAVPlayer *player; //视频播放器
 
 @property (nonatomic ,strong) AVPlayerItem *playerItem; //视频资源载体
 
-@property (nonatomic, weak) ShortVideoModel  *aweme;
+@property (nonatomic, weak) ShortVideoModel  *video;
 
 @property (nonatomic, strong) AVURLAsset           *urlAsset;               //视频资源
 
@@ -49,7 +50,7 @@
 
 @property (nonatomic, strong) WebCombineOperation  *combineOperation;
 
-@property (nonatomic, weak) AwemeListCell *currentCell;
+@property (nonatomic, weak) VideoPageListCell *currentCell;
 
 @property (nonatomic, strong) NSOperation          *queryCacheOperation;    //查找本地视频缓存数据的NSOperation
 

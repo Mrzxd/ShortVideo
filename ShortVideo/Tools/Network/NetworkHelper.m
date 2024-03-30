@@ -26,9 +26,9 @@ NSString *const FindUserByUidPath = @"user";
 
 
 //获取用户发布的短视频列表数据
-NSString *const FindAwemePostByPagePath = @"aweme/post";
+NSString *const FindvideoPostByPagePath = @"video/post";
 //获取用户喜欢的短视频列表数据
-NSString *const FindAwemeFavoriteByPagePath = @"aweme/favorite";
+NSString *const FindvideoFavoriteByPagePath = @"video/favorite";
 
 
 //发送文本类型群聊消息
@@ -101,9 +101,9 @@ NSString *const FindComentByPagePath = @"comment/list";
         NSString *path = task.originalRequest.URL.path;
         if ([path containsString:FindUserByUidPath]) {
             success([NSString readJson2DicWithFileName:@"user"]);
-        }else if ([path containsString:FindAwemePostByPagePath]) {
-            success([NSString readJson2DicWithFileName:@"awemes"]);
-        }else if ([path containsString:FindAwemeFavoriteByPagePath]) {
+        }else if ([path containsString:FindvideoPostByPagePath]) {
+            success([NSString readJson2DicWithFileName:@"videos"]);
+        }else if ([path containsString:FindvideoFavoriteByPagePath]) {
             success([NSString readJson2DicWithFileName:@"favorites"]);
         }else if ([path containsString:FindComentByPagePath]) {
             success([NSString readJson2DicWithFileName:@"comments"]);

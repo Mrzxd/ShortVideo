@@ -1,5 +1,5 @@
 //
-//  AwemeListResponse.h
+//  videoResponse.h
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
@@ -7,10 +7,10 @@
 //
 
 #import "BaseResponse.h"
-#import "Aweme.h"
+#import "VideoModel.h"
 
-@interface AwemeListResponse:BaseResponse
+@interface VideoResponse: BaseResponse
 
-@property (nonatomic, copy) NSArray<Aweme *> <Aweme>   *data;
+@property (nonatomic, copy) VideoModel   *data;
 
 @end

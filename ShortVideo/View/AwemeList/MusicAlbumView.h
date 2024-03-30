@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class Aweme;
+@class VideoModel;
 
 @interface MusicAlbumView : UIView
 

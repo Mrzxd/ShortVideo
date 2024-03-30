@@ -41,7 +41,7 @@
 @property (nonatomic , copy) NSString              * unique_id;
 @property (nonatomic , assign) BOOL              hide_location;
 @property (nonatomic , copy) NSString              * enterprise_verify_reason;
-@property (nonatomic , assign) NSInteger              aweme_count;
+@property (nonatomic , assign) NSInteger              video_count;
 @property (nonatomic , assign) NSInteger              story_count;
 @property (nonatomic , assign) NSInteger              unique_id_modify_time;
 @property (nonatomic , assign) NSInteger              follower_count;

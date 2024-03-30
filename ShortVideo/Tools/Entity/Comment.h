@@ -19,7 +19,7 @@
 @property (nonatomic , assign) NSInteger           digg_count;
 @property (nonatomic , assign) NSInteger           create_time;
 @property (nonatomic , copy) NSString              *reply_id;
-@property (nonatomic , copy) NSString              *aweme_id;
+@property (nonatomic , copy) NSString              *video_id;
 @property (nonatomic , assign) NSInteger           user_digged;
 @property (nonatomic , strong) NSMutableArray      *text_extra;
 @property (nonatomic , copy) NSString              *user_type;
@@ -29,5 +29,5 @@
 @property (nonatomic , assign) BOOL                isTemp;
 @property (nonatomic , assign) NSInteger           taskId;
 
--(instancetype)init:(NSString *)awemeId text:(NSString *)text taskId:(NSInteger)taskId;
+-(instancetype)init:(NSString *)videoId text:(NSString *)text taskId:(NSInteger)taskId;
 @end

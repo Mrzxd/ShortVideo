@@ -7,7 +7,7 @@
 //
 
 #import "MusicAlbumView.h"
-#import "Aweme.h"
+#import "VideoModel.h"
 
 @interface MusicAlbumView ()
 

@@ -1,5 +1,5 @@
 //
-//  AwemeListController.h
+//  videoListController.h
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
@@ -8,13 +8,13 @@
 
 #import "UIKit/UIKit.h"
 
-//typedef NS_ENUM(NSUInteger, AwemeType) {
-//    AwemeWork        = 0,
-//    AwemeFavorite    = 1
+//typedef NS_ENUM(NSUInteger, videoType) {
+//    videoWork        = 0,
+//    videoFavorite    = 1
 //};
 
-@class Aweme;
-@interface AwemeListController : UIViewController
+@class VideoModel;
+@interface VideoPageListController : UIViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) NSInteger currentIndex;

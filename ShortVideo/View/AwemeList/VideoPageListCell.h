@@ -1,5 +1,5 @@
 //
-//  AwemeListCell.h
+//  videoListCell.h
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
@@ -10,7 +10,7 @@
 
 typedef void (^OnPlayerReady)(void);
 
-@class Aweme;
+@class VideoModel;
 @class AVPlayerView;
 @class HoverTextView;
 @class CircleTextView;
@@ -18,9 +18,9 @@ typedef void (^OnPlayerReady)(void);
 @class MusicAlbumView;
 @class FavoriteView;
 
-@interface AwemeListCell : UITableViewCell
+@interface VideoPageListCell : UITableViewCell
 
-@property (nonatomic, strong) ShortVideoModel  *aweme;
+@property (nonatomic, strong) ShortVideoModel  *video;
 
 @property (nonatomic, strong) AVPlayerView     *playerView;
 @property (nonatomic, strong) HoverTextView    *hoverTextView;
@@ -45,11 +45,11 @@ typedef void (^OnPlayerReady)(void);
 @property (nonatomic, strong) OnPlayerReady    onPlayerReady;
 @property (nonatomic, assign) BOOL             isPlayerReady;
 
-@property (nonatomic, weak) AwemeListCell *currentCell;
+@property (nonatomic, weak) VideoPageListCell *currentCell;
 
 @property (nonatomic, assign) NSInteger currentIndex;
 
-- (void)initData:(ShortVideoModel *)aweme;
+- (void)initData:(ShortVideoModel *)video;
 - (void)play;
 - (void)pause;
 - (void)replay;

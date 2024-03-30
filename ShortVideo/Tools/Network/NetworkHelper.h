@@ -12,9 +12,9 @@
 #import "BaseResponse.h"
 #import "VisitorResponse.h"
 #import "UserResponse.h"
-#import "AwemeResponse.h"
-#import "AwemeListResponse.h"
-#import "AwemeResponse.h"
+#import "videoResponse.h"
+#import "videoListResponse.h"
+#import "videoResponse.h"
 #import "GroupChatResponse.h"
 #import "GroupChatListResponse.h"
 #import "CommentResponse.h"
@@ -23,7 +23,7 @@
 #import "BaseRequest.h"
 #import "VisitorRequest.h"
 #import "UserRequest.h"
-#import "AwemeListRequest.h"
+#import "videoListRequest.h"
 #import "GroupChatListRequest.h"
 #import "PostGroupChatTextRequest.h"
 #import "PostGroupChatImageRequest.h"
@@ -49,9 +49,9 @@ extern NSString *const FindUserByUidPath;
 
 
 //获取用户发布的短视频列表数据
-extern NSString *const FindAwemePostByPagePath;
+extern NSString *const FindvideoPostByPagePath;
 //获取用户喜欢的短视频列表数据
-extern NSString *const FindAwemeFavoriteByPagePath;
+extern NSString *const FindvideoFavoriteByPagePath;
 
 
 //发送文本类型群聊消息

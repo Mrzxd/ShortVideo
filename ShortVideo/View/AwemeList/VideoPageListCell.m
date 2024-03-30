@@ -1,13 +1,13 @@
 //
-//  AwemeListCell.m
+//  videoListCell.m
 //  ShortVideo
 //
 //  Created by 张兴栋 on 2018/7/30.
 //  Copyright © 2018年 张兴栋. All rights reserved.
 //  If you want to contact me, you can add my WeChat account: 457742782
 
-#import "AwemeListCell.h"
-#import "Aweme.h"
+#import "VideoPageListCell.h"
+#import "VideoModel.h"
 #import "AVPlayerView.h"
 #import "HoverTextView.h"
 #import "CircleTextView.h"
@@ -20,10 +20,10 @@
 #import "WebCacheHelpler.h"
 #import "NSString+Extension.h"
 
-static const NSInteger kAwemeListLikeCommentTag = 0x01;
-static const NSInteger kAwemeListLikeShareTag   = 0x02;
+static const NSInteger kvideoListLikeCommentTag = 0x01;
+static const NSInteger kvideoListLikeShareTag   = 0x02;
 
-@interface AwemeListCell() <SendTextDelegate, HoverTextViewDelegate, AVPlayerUpdateDelegate>
+@interface VideoPageListCell() <SendTextDelegate, HoverTextViewDelegate, AVPlayerUpdateDelegate>
 
 @property (nonatomic, strong) UIView                   *container;
 @property (nonatomic, strong) CAGradientLayer          *gradientLayer;
@@ -36,7 +36,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 
 @end
 
-@implementation AwemeListCell
+@implementation VideoPageListCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -90,7 +90,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
     [_playerStatusBar setHidden:YES];
     [_container addSubview:_playerStatusBar];
     
-    //init aweme message
+    //init video message
     _musicIcon = [[UIImageView alloc]init];
     _musicIcon.hidden = YES;
     _musicIcon.contentMode = UIViewContentModeCenter;
@@ -126,7 +126,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
     _share.contentMode = UIViewContentModeCenter;
     _share.image = [UIImage imageNamed:@"图标_中32_视频_分享"];
     _share.userInteractionEnabled = YES;
-    _share.tag = kAwemeListLikeShareTag;
+    _share.tag = kvideoListLikeShareTag;
     [_share addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)]];
     [_container addSubview:_share];
     
@@ -140,7 +140,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
     _comment.contentMode = UIViewContentModeCenter;
     _comment.image = [UIImage imageNamed:@"图标_中32_视频_收藏_默认"];
     _comment.userInteractionEnabled = YES;
-    _comment.tag = kAwemeListLikeCommentTag;
+    _comment.tag = kvideoListLikeCommentTag;
     [_comment addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)]];
     [_container addSubview:_comment];
     
@@ -295,7 +295,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 //- (void)onSendText:(NSString *)text {
 //    __weak __typeof(self) wself = self;
 //    PostCommentRequest *request = [PostCommentRequest new];
-//    request.aweme_id = _aweme.aweme_id;
+//    request.video_id = _video.video_id;
 //    request.udid = UDID;
 //    request.text = text;
 //    [NetworkHelper postWithUrlPath:PostComentPath request:request success:^(id data) {
@@ -314,8 +314,8 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 //gesture
 - (void)handleGesture:(UITapGestureRecognizer *)sender {
     switch (sender.view.tag) {
-        case kAwemeListLikeCommentTag: {
-//            CommentsPopView *popView = [[CommentsPopView alloc] initWithAwemeId:_aweme.aweme_id];
+        case kvideoListLikeCommentTag: {
+//            CommentsPopView *popView = [[CommentsPopView alloc] initWithvideoId:_video.video_id];
 //            [popView show];
            
             UIImage *collectionImage = [UIImage imageNamed:YES ? @"图标_中32_视频_收藏_已收藏" : @"图标_中32_视频_收藏_默认"];
@@ -324,7 +324,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
             self.commentNum.hidden = 0 == 0;
             break;
         }
-        case kAwemeListLikeShareTag: {
+        case kvideoListLikeShareTag: {
           
             break;
         }
@@ -447,7 +447,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 // AVPlayerUpdateDelegate
 - (void)onProgressUpdate:(CGFloat)current total:(CGFloat)total {
     //播放进度更新
-    _aweme.currentTime = current;
+    _video.currentTime = current;
 
 }
 
@@ -460,7 +460,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
             [self startLoadingPlayItemAnim:NO];
             
             _isPlayerReady = YES;
-//            [_musicAlum startAnimation:_aweme.rate];
+//            [_musicAlum startAnimation:_video.rate];
             
             if(_onPlayerReady) {
                 _onPlayerReady();
@@ -476,31 +476,30 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 }
 
 // update method
-- (void)initData:(ShortVideoModel *)aweme {
-    _aweme = aweme;
+- (void)initData:(ShortVideoModel *)video {
+    _video = video;
     
-    self.playerView.aweme = aweme;
-    self.focus.aweme = aweme;
-    self.favorite.aweme = aweme;
+    self.playerView.video = video;
+    self.focus.video = video;
+    self.favorite.video = video;
     
     self.favorite.favoriteNum = self.favoriteNum;
     
-    UIImage *collectionImage = [UIImage imageNamed:aweme.collectStatus ? @"图标_中32_视频_收藏_已收藏" : @"图标_中32_视频_收藏_默认"];
+    UIImage *collectionImage = [UIImage imageNamed:video.collectStatus ? @"图标_中32_视频_收藏_已收藏" : @"图标_中32_视频_收藏_默认"];
     [self.comment setImage:collectionImage];
     
-    [_nickName setText:[NSString stringWithFormat:@"@%@", NonNullString(aweme.chineseName)]];
-    [_desc setText:NonNullString(aweme.contentTitle)];
-    [_favoriteNum setText:[NSString formatCount:aweme.likeCount]];
-    _favoriteNum.hidden = aweme.likeCount == 0;
-    [_commentNum setText:[NSString formatCount:aweme.collectCount]];
-    _commentNum.hidden = aweme.collectCount == 0;
+    [_nickName setText:[NSString stringWithFormat:@"@%@", NonNullString(video.chineseName)]];
+    [_desc setText:NonNullString(video.contentTitle)];
+    [_favoriteNum setText:[NSString formatCount:video.likeCount]];
+    _favoriteNum.hidden = video.likeCount == 0;
+    [_commentNum setText:[NSString formatCount:video.collectCount]];
+    _commentNum.hidden = video.collectCount == 0;
     _shareNum.hidden = YES;
     
-    __weak __typeof(self) wself = self;
     [_avatar setImage:[UIImage imageNamed:@"LogoImage"]];
 }
 
-- (void)setCurrentCell:(AwemeListCell *)currentCell {
+- (void)setCurrentCell:(VideoPageListCell *)currentCell {
     _currentCell = currentCell;
     self.playerView.currentCell = currentCell;
 }
@@ -516,20 +515,20 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 }
 
 - (void)replay {
-    [_playerView replayAndCurrentTime:_aweme.currentTime];
+    [_playerView replayAndCurrentTime:_video.currentTime];
     [_pauseIcon setHidden:YES];
 }
 
 - (void)startDownloadBackgroundTask {
-    if (self.aweme.contentDetail.count > 0) {
-        NSString *playUrl = [self getPlayUrlWithModels:self.aweme.contentDetail];
-        [_playerView setPlayerWithUrl:playUrl currentTime:_aweme.currentTime];
+    if (self.video.contentDetail.count > 0) {
+        NSString *playUrl = [self getPlayUrlWithModels:self.video.contentDetail];
+        [_playerView setPlayerWithUrl:playUrl currentTime:_video.currentTime];
     }
 }
 
 - (void)startDownloadHighPriorityTask {
-    if (self.aweme.contentDetail.count > 0) {
-        NSString *playUrl = [self getPlayUrlWithModels:self.aweme.contentDetail];
+    if (self.video.contentDetail.count > 0) {
+        NSString *playUrl = [self getPlayUrlWithModels:self.video.contentDetail];
         NSURL *URL = [playUrl urlScheme:_playerView.sourceScheme];
         [_playerView startDownloadTask:URL isBackground:NO range:NSMakeRange(0, 0)];
     }
@@ -561,7 +560,7 @@ static const NSInteger kAwemeListLikeShareTag   = 0x02;
 
 - (void)dealloc {
     
-    NSLog(@"...........");
+    NSLog(@".....dealloced......");
 }
 
 @end

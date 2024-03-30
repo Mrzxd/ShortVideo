@@ -12,6 +12,6 @@
 
 @property (nonatomic, assign) NSInteger   page;
 @property (nonatomic, assign) NSInteger   size;
-@property (nonatomic, copy) NSString      *aweme_id;
+@property (nonatomic, copy) NSString      *video_id;
 
 @end

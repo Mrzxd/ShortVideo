@@ -10,7 +10,7 @@
 
 @interface PostCommentRequest:BaseRequest
 
-@property (nonatomic, copy) NSString   *aweme_id;
+@property (nonatomic, copy) NSString   *video_id;
 @property (nonatomic, copy) NSString   *udid;
 @property (nonatomic, copy) NSString   *text;
 

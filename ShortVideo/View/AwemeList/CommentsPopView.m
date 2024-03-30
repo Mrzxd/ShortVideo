@@ -18,7 +18,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
 
 @interface CommentsPopView () <UITableViewDelegate,UITableViewDataSource, UIGestureRecognizerDelegate,UIScrollViewDelegate, CommentTextViewDelegate>
 
-@property (nonatomic, assign) NSString                         *awemeId;
+@property (nonatomic, assign) NSString                         *videoId;
 @property (nonatomic, strong) Visitor                          *vistor;
 
 @property (nonatomic, assign) NSInteger                        pageIndex;
@@ -35,7 +35,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
 
 @implementation CommentsPopView
 
-- (instancetype)initWithAwemeId:(NSString *)awemeId {
+- (instancetype)initWithvideoId:(NSString *)videoId {
     self = [super init];
     if (self) {
         self.frame = ScreenFrame;
@@ -43,7 +43,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
         tapGestureRecognizer.delegate = self;
         [self addGestureRecognizer:tapGestureRecognizer];
         
-        _awemeId = awemeId;
+        _videoId = videoId;
         _vistor = readVisitor();
         
         _pageIndex = 0;
@@ -122,7 +122,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
 -(void)onSendText:(NSString *)text {
     __weak __typeof(self) wself = self;
     PostCommentRequest *request = [PostCommentRequest new];
-    request.aweme_id = _awemeId;
+    request.video_id = _videoId;
     request.udid = UDID;
     request.text = text;
     __block NSURLSessionDataTask *task = [NetworkHelper postWithUrlPath:PostComentPath request:request success:^(id data) {
@@ -139,7 +139,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
         
     }];
     
-    Comment *comment = [[Comment alloc] init:_awemeId text:text taskId:task.taskIdentifier];
+    Comment *comment = [[Comment alloc] init:_videoId text:text taskId:task.taskIdentifier];
     comment.user_type = @"visitor";
     comment.visitor = _vistor;
     
@@ -260,7 +260,7 @@ NSString * const kCommentFooterCell   = @"CommentFooterCell";
     CommentListRequest *request = [CommentListRequest new];
     request.page = pageIndex;
     request.size = pageSize;
-    request.aweme_id = _awemeId;
+    request.video_id = _videoId;
     [NetworkHelper getWithUrlPath:FindComentByPagePath request:request success:^(id data) {
         CommentListResponse *response = [[CommentListResponse alloc] initWithDictionary:data error:nil];
         NSArray<Comment *> *array = response.data;
